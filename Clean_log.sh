@@ -1,9 +1,7 @@
-/*
-cron: 1 19 * * *
-*/
-
-const $ = new Env('清理日志');
 #!/bin/bash
+## name: 清理青龙日志
+## cron: 0 3 * * *
+
 echo "开始清理日志"
 pwd
 # ls ../log
