@@ -1,3 +1,8 @@
+/*
+cron: 1 19 * * *
+*/
+
+const $ = new Env('清理日志');
 #!/bin/bash
 echo "开始清理日志"
 pwd
