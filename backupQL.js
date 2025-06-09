@@ -1,4 +1,6 @@
 #!/bin/bash
+## name: 备份青龙面板
+## cron: 15 12 * * *
 
 # 创建备份目录（如果不存在）
 mkdir -p /sdcard/qlbackup
