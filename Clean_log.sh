@@ -1,6 +1,6 @@
 #!/bin/bash
 ## name: 清理青龙日志
-## cron: 0 3 * * *
+## cron: 15 12 * * *
 
 echo "开始清理日志"
 pwd
