@@ -9,7 +9,7 @@ backupQL.js：备份青龙面板
 
 拉库指令：ql repo https://github.com/hlt1995/qlScript.git "backupQL.js|Clean_log.sh"
 
-———————————————————————————————————
+##
 
 restoreQL.sh：恢复青龙面板  ## 在Alpine终端手动运行 ##
 
