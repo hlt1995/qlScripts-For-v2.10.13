@@ -1,3 +1,5 @@
+拉库指令：ql repo https://github.com/hlt1995/qlScript.git
+#
 自动更新YDNS、DuckDNS动态域名服务的IP地址
 
 YDNS：https://ydns.io
@@ -21,9 +23,7 @@ backupQL.js：备份青龙面板
     2. /ql/config/  面板登录信息与设置
     3. /ql/scripts/  脚本文件
 
-拉库指令：ql repo https://github.com/hlt1995/qlScript.git "backupQL.sh|Clean_log.sh"
-
-##
+#
 
 restoreQL.sh：恢复青龙面板  ## 在Alpine终端手动运行 ##
 
