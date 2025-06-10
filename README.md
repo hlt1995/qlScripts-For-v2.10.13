@@ -6,7 +6,7 @@ YDNS：https://ydns.io
 
 DuckDNS：https://www.duckdns.org
 
-txt用于记录上一次成功更新的IP地址，以判断是否发送更新请求。默认路径为/ql/scripts/hlt1995_qlScript/，不同版本的青龙面板请注意脚本文件路径
+last_ip.txt用于记录上一次成功更新的IP地址，以判断是否发送更新请求。默认路径为/ql/scripts/hlt1995_qlScript/，不同版本的青龙面板请注意脚本文件路径
 
 拉取的文件后缀名：js sh txt
 
@@ -25,7 +25,7 @@ backupQL.js：备份内容如下
 
 #
 
-restoreQL.sh：恢复青龙面板  ## 在Alpine终端手动运行 ##
+restoreQL.sh：复制代码在青龙容器内手动运行
 
 
 jb_bean_change.js：京东资产统计 ## 去除多余信息 ##
