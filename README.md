@@ -6,7 +6,7 @@ YDNS：https://ydns.io
 
 DuckDNS：https://www.duckdns.org
 
-last_ip.txt用于记录上一次成功更新的IP地址，以判断是否发送更新请求。默认路径为/ql/scripts/hlt1995_qlScript/，不同版本的青龙面板请注意脚本文件路径
+*_last_ip.txt用于保存上一次成功更新的IP地址，以判断是否发送更新请求。
 
 拉取的文件后缀名：js sh txt
 
