@@ -1,4 +1,4 @@
-拉库指令：ql repo https://github.com/hlt1995/qlScript.git "" "restoreQL.sh|jb_bean_change.js|jd_CheckCK.js"
+拉库指令：ql repo https://github.com/hlt1995/qlScript.git "" "restoreQL|jd_"
 #
 自动更新YDNS、DuckDNS动态域名服务的IP地址
 
@@ -28,8 +28,8 @@ backupQL.js：备份内容如下
 restoreQL.sh：复制代码在青龙容器内手动运行
 
 
-jb_bean_change.js：京东资产统计 ## 去除多余信息 ##
+jd_bean_change.js：自用存档
 
 
-jd_CheckCK.js：京东账号CK检测  ## 去除多余信息 ##
+jd_CheckCK.js：自用存档
 
