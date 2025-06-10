@@ -9,14 +9,16 @@
 # 3. 只处理IPv4地址
 
 # ==================== 用户配置区域 =====================
-YDNS_HOST=""       # 您的域名
-YDNS_USER=""  # YDNS用户名/邮箱
-YDNS_PASS=""       # YDNS密码
+YDNS_HOST="yourdomian.ydns.eu"    # 您的域名
+YDNS_USER="youremail"             # YDNS用户名/邮箱
+YDNS_PASS="yourpassword"          # YDNS密码
 
 # 获取IPv4的服务（确保只返回IPv4地址）
 IP_API="http://members.3322.org/dyndns/getip"
 
 # 上次IP记录文件（用于检测变化）
+# 青龙版本v2.12.2以下"/ql/scripts/hlt1995_qlScript/ydns_last_ip.txt"
+# 青龙版本v2.12.2及以上"/ql/data/scripts/hlt1995_qlScript/ydns_last_ip.txt"
 IP_FILE="/ql/scripts/hlt1995_qlScript/ydns_last_ip.txt"
 
 # 调试模式（true时显示详细输出）
