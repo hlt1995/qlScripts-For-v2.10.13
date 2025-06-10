@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Alpine下执行命令
 # 定义备份包路径（你可手动修改日期）
 BACKUP_FILE="/sdcard/ql_data_backup_$(date +%Y%m%d).tar.gz"
 
