@@ -6,7 +6,7 @@ YDNS：https://ydns.io
 
 DuckDNS：https://www.duckdns.org
 
-txt用于记录上次成功更新的IP地址，以判断是否发送更新请求。默认路径为/ql/scripts/hlt1995_qlScript/，不同版本的青龙面板请注意脚本文件路径
+txt用于记录上一次成功更新的IP地址，以判断是否发送更新请求。默认路径为/ql/scripts/hlt1995_qlScript/，不同版本的青龙面板请注意脚本文件路径
 
 拉取的文件后缀名：js sh txt
 
@@ -14,10 +14,10 @@ txt用于记录上次成功更新的IP地址，以判断是否发送更新请求
 
 #
 
-Clean_log.sh：清理超过10天的任务日志
+Clean_log.sh：变量设置日志保留天数
 
 
-backupQL.js：备份青龙面板
+backupQL.js：备份内容如下
 
     1. /ql/db  环境变量、定时任务、通知配置
     2. /ql/config/  面板登录信息与设置
