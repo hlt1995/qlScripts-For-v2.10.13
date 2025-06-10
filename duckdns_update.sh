@@ -16,7 +16,7 @@ DUCKDNS_TOKEN="your_token"      # DuckDNS账户token
 IP_API="http://members.3322.org/dyndns/getip"
 
 # 上次IP记录文件（用于检测变化）
-IP_FILE="/ql/scripts/hlt1995_IPupdate/DuckDNS_last_ip.txt"
+IP_FILE="/ql/scripts/hlt1995_qlScript/duckdns_last_ip.txt"
 
 # 调试模式（true时显示详细输出）
 DEBUG="false"
