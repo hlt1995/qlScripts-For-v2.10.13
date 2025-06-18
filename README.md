@@ -14,7 +14,7 @@ DuckDNS：https://www.duckdns.org
 
 #
 
-Clean_log.sh：变量设置日志保留天数
+Clean_log.sh：手动在青龙面板根目录新建脚本并复制代码，创建定时任务。变量设置日志保留天数
 
 
 backupQL.js：备份内容如下
