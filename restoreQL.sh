@@ -26,4 +26,4 @@ if command -v pm2 &> /dev/null; then
     pm2 restart all
 fi
 
-echo "✅ 青龙面板数据恢复完成！"
+echo "✅ 青龙面板数据恢复完成！按Enter结束脚本！手动启动青龙面板！"
