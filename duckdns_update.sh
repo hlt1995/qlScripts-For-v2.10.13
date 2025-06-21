@@ -1,6 +1,6 @@
 #!/bin/sh
 ## name: duckdns IP更新
-## cron: */10 * * * *
+## cron: */5 * * * *
 
 # DuckDNS IP更新脚本 for 青龙面板 (带IP变化检测)
 # 优化内容：
