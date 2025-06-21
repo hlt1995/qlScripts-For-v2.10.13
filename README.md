@@ -14,7 +14,7 @@ DuckDNS：https://www.duckdns.org
 
 #
 
-Clean_log.sh：变量设置日志保留天数，默认为10天
+Clean_log.sh：脚本内可修改日志保留天数，默认为10天
 
 backupQL.js：备份内容如下
 
