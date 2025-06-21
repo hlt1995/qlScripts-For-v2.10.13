@@ -18,7 +18,7 @@ DuckDNS：https://www.duckdns.org
 
 环境变量直接在脚本里配置
 
-#
+## 🐲 青龙面板维护
 
 Clean_log.sh：脚本内可修改日志保留天数，默认为10天
 
@@ -28,11 +28,9 @@ backupQL.js：备份内容如下
     2. /ql/config/  面板登录信息与设置
     3. /ql/scripts/  脚本文件
 
-#
-
-
 restoreQL.sh：复制代码在青龙容器内手动运行
 
+## 🗃️ 存档
 
 jd_bean_change.js：自用存档
 
