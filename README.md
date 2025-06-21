@@ -4,6 +4,7 @@
 ```plaintext
 ql repo https://github.com/hlt1995/qlScript.git "" "restoreQL|jd_"
 ```
+脚本基于青龙面板v2.10.13
 
 ## 🚀 自动更新YDNS、DuckDNS动态域名服务的IP地址
 
@@ -17,7 +18,7 @@ DuckDNS：https://www.duckdns.org
 
 环境变量直接在脚本里配置
 
-## 🐲 青龙面板维护 ### 脚本基于青龙面板v2.10.13
+## 🐲 青龙面板维护
 
 Clean_log.sh：脚本内可修改日志保留天数，默认为10天
 
