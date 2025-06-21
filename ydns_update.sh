@@ -1,6 +1,6 @@
 #!/bin/sh
 ## name: ydns IP更新
-## cron: */10 * * * *
+## cron: */5 * * * *
 
 # YDNS DDNS 更新脚本 for 青龙面板 (带IP变化检测)
 # 优化内容：
