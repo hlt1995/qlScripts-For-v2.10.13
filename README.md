@@ -4,6 +4,7 @@
 ```plaintext
 ql repo https://github.com/hlt1995/qlScript.git "" "restoreQL|jd_"
 ```
+脚本基于青龙面板v2.10.13运行，不用版本需要确认青龙文件路径
 
 ## 🚀 自动更新YDNS、DuckDNS动态域名服务的IP地址
 
