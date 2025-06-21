@@ -1,4 +1,10 @@
-拉库指令：ql repo https://github.com/hlt1995/qlScript.git "" "restoreQL|jd_"
+
+## 🔗 拉库地址
+
+```plaintext
+ql repo https://github.com/hlt1995/qlScript.git "" "restoreQL|jd_"
+```
+
 #
 自动更新YDNS、DuckDNS动态域名服务的IP地址
 
