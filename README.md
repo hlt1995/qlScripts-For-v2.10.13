@@ -4,7 +4,7 @@
 ```plaintext
 ql repo https://github.com/hlt1995/qlScript.git "" "restoreQL|jd_"
 ```
-脚本基于Android手机+ZeroTermux+Alpine部署青龙面板v2.10.13运行[部署教程参考](https://blog.csdn.net/SXIAOtian/article/details/124820799)，不同版本需要确认青龙文件路径
+> 脚本基于Android手机+ZeroTermux+Alpine部署青龙面板v2.10.13运行[部署教程参考](https://blog.csdn.net/SXIAOtian/article/details/124820799)，不同版本需要确认青龙文件路径
 
 ---
 
