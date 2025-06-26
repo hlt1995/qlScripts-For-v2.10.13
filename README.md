@@ -1,43 +1,25 @@
+# 青龙教程
 
-## 🔗 拉库地址
+- `caiyun-1.0.0-alpha.7.mjs`：和彩云脚本
+- `caiyun.ql.mjs`：青龙启动脚本
+- `asign.json`：配置文件
 
-```plaintext
-ql repo https://github.com/hlt1995/qlScript.git "" "restoreQL|jd_"
+## 青龙脚本配置
+
 ```
-> 脚本基于Android手机+ZeroTermux+Alpine部署青龙面板v2.10.13运行[部署教程参考](https://blog.csdn.net/SXIAOtian/article/details/124820799)，不同版本需要确认青龙文件路径
+node caiyun.ql.mjs
+```
+> 青龙任务命令
 
----
 
-## 🚀 自动更新YDNS、DuckDNS动态域名服务的IP地址
+```
+30 9,16,23 * * *
+```
+> 青龙任务定时，每天9:30,16:30,23:30运行一次脚本
 
-YDNS：https://ydns.io
 
-DuckDNS：https://www.duckdns.org
+[和彩云](https://as.js.cool/reference/caiyun)
+[数据配置](https://as.js.cool/start/config)
+[推送配置](https://as.js.cool/reference/push)
 
-*_last_ip.txt用于保存上一次成功更新的IP地址，以判断是否发送更新请求。
-
-拉取的文件后缀名：js sh txt
-
-环境变量直接在脚本里配置
-
----
-
-## 🐲 青龙面板维护
-
-Clean_log.sh：脚本内可修改日志保留天数，默认为10天
-
-backupQL.js：备份内容如下
-
-            1. /ql/db  环境变量、定时任务、通知配置
-            2. /ql/config/  面板登录信息与设置
-            3. /ql/scripts/  脚本文件
-     
-restoreQL.sh：复制代码在青龙容器内手动运行
-
----
-
-## 🗃️ 存档
-
-jd_bean_change.js：自用存档
-
-jd_CheckCK.js：自用存档
+![](https://wowull.xyz/d/yd/Sundries/ql_scripts/asunajs/ql.jpg?sign=jhRfQ5l89MVJFdKBgyXrbPYB8cx46VhnC4_pCsOTptE=:0)
