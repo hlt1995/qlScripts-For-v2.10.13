@@ -838,10 +838,6 @@ async function showMsg() {
         }
         ReturnMessage += `\n`;
     }
-    if ($.wyw_score != '' ) {
-        ReturnMessage += `【玩一玩奖票】${$.wyw_score}个`;
-        ReturnMessage += `\n`;
-    }
     if ($.wb_score != '' ) {
         ReturnMessage += `【汪贝余额】${$.wb_score}个${$.wb_expire!=0?'(近7日将过期'+$.wb_expire+')':''}`;
         ReturnMessage += `\n`;
