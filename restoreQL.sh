@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Alpine下执行命令
-# 定义备份包路径（默认手机根目录可手动修改）（你可手动修改日期）
-BACKUP_FILE="/sdcard/ql_data_backup_$(date +%Y%m%d).tar.gz"
+# 定义备份包路径（默认手机根目录可手动修改）（手动修改备份文件的日期）
+BACKUP_FILE="/sdcard/ql_data_backup_20250101.tar.gz"
 
 # 判断文件是否存在
 if [ ! -f "$BACKUP_FILE" ]; then
