@@ -14,7 +14,7 @@ DuckDNS：https://www.duckdns.org
 
 *_last_ip.txt用于保存上一次成功更新的IP地址，以判断是否发送更新请求。
 
-拉取的文件后缀名：js sh txt
+拉取的文件后缀名：`js sh txt`
 
 环境变量：`YDNS_CONFIG` `DUCKDNS_CONFIG`
 
