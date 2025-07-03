@@ -16,7 +16,7 @@ DuckDNS：https://www.duckdns.org
 
 拉取的文件后缀名：js sh txt
 
-环境变量：```YDNS_CONFIG    ```DUCKDNS_CONFIG```
+环境变量：```YDNS_CONFIG ```plaintextDUCKDNS_CONFIG```
 
 ---
 
