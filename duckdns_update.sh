@@ -30,7 +30,7 @@ fi
 IP_API="http://members.3322.org/dyndns/getip"
 
 # 上次IP记录文件路径（青龙v2.12.2以下）
-IP_FILE="/ql/scripts/hlt1995_qlScript/ydns_last_ip.txt"
+IP_FILE="/ql/scripts/hlt1995_qlScript/duckdns_last_ip.txt"
 # 上次IP记录文件路径（青龙2.12.2及以上）
 # IP_FILE="/ql/data/scripts/hlt1995_qlScript/duckdns_last_ip.txt"
 
