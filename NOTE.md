@@ -7,10 +7,10 @@
 第三步、回到青龙面板依赖管理，安装sharp依赖。
 
 第四步、成功后在Alpine下执行`which npm`，此时如果位置和第一步记下的位置不同，则执行
-
-           rm -f /usr/local/bin/npm
-           rm -f /usr/local/bin/npx
-
+```
+rm -f /usr/local/bin/npm
+rm -f /usr/local/bin/npx
+```
 如果位置和第一步记下的位置相同，则执行`npm install -g npm@版本号`
 
 ---
