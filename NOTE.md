@@ -12,3 +12,7 @@ rm -f /usr/local/bin/npm
 rm -f /usr/local/bin/npx
 
 如果位置和第一步记下的位置相同，则执行npm install -g npm@版本号
+
+---
+
+定期重启
