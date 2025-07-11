@@ -18,4 +18,11 @@ rm -f /usr/local/bin/npx
 定期重启
 
 1.手机设定定时开关机，每周六3：31关机 - 3：36开机
-2.设置开机启动ZeroTermux，使用
+
+2.通过MacroDroid设置开机启动ZeroTermux
+
+3.Alpine下执行nano ~/.profile,在文件中添加
+cd ~
+./ql.sh
+
+4.青龙面板重启会重新安装依赖，为了成功安装依赖sharp@0.32.0，需要在Alpine下执行npm install -g npm@6
