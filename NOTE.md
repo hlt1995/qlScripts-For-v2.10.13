@@ -8,8 +8,9 @@
 
 第四步、成功后在alpine下执行`which npm`，此时如果位置和第一步记下的位置不同，则执行
 
-`rm -f /usr/local/bin/npm
-rm -f /usr/local/bin/npx`
+`rm -f /usr/local/bin/npm`
+
+`rm -f /usr/local/bin/npx`
 
 如果位置和第一步记下的位置相同，则执行`npm install -g npm@版本号`
 
@@ -23,7 +24,7 @@ rm -f /usr/local/bin/npx`
 
 3.Alpine下执行`nano ~/.profile`,在文件中添加
 
-cd ~
-./ql.sh
+     cd ~
+     ./ql.sh
 
 4.青龙面板重启会重新安装依赖，为了成功安装依赖sharp@0.32.0，需要在Alpine下执行`npm install -g npm@6`
