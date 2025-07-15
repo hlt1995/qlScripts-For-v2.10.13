@@ -38,4 +38,4 @@ ql.sh脚本末尾写的是`crond -f >/dev/null`，这会让`crond`以前台方�
 
 而最后一行又是`exec "$@"`，所以：`crond -f` 这个命令要么被卡住，要么直接被 `exec "$@"` 替代（而被丢弃）。
 
-只需要把`crond -f >/dev/null`改成`crond -b`即可
+只需要把`crond -f >/dev/null`改成`crond -f >/dev/null 2>&1 &`即可
