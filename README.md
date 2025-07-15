@@ -36,6 +36,4 @@ restoreQL.sh：复制代码在青龙容器内手动运行
 
 ## 🗃️ 存档
 
-jd_bean_change.js
-jd_CheckCK.js
-ql.sh
+jd_bean_change.js、jd_CheckCK.js、ql.sh
