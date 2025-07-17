@@ -12,6 +12,7 @@ npm install axios moment ds jsdom sharp@0.32.0 --prefix /ql
 ```
 rm -f /usr/local/bin/npm
 rm -f /usr/local/bin/npx
+
 ```
 
 ---
