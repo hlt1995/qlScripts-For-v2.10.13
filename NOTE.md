@@ -25,7 +25,11 @@ rm -f /usr/local/bin/npx
 
 ```
 cd ~
-./ql.sh
+
+# 判断青龙面板是否已经启动 
+if ! pm2 list | grep -qE 'panel|schedule'; then
+  ./ql.sh
+fi
 ```
 
 第四步、青龙面板重启会重新安装依赖，为了成功安装依赖sharp@0.32.0，需要在Alpine下执行`npm install -g npm@6`
