@@ -1,3 +1,6 @@
+//name: Epic免费入库提醒
+//cron: 30 7 * * * 5
+
 const axios = require('axios');
 
 // 从环境变量获取Bark Key
