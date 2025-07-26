@@ -36,7 +36,7 @@ restoreQL.sh：复制代码在青龙容器内手动运行
 
 ## 🎮️ Epic免费游戏领取提醒
 
-仅写了bark通知，直接读取配置文件中的`export BARK_PUSH=""`
+只写了bark推送，直接读取配置文件中的`export BARK_PUSH=""`
 
 点击bark通知即可跳转领取页面
 
