@@ -142,14 +142,14 @@ async function sendBarkNotification(games) {
         const title = `Epic本周免费游戏 (${games.length}款)`;
         let content = '';
         
+        // 添加通用提示
+        content += `\n🔗 领取地址：${games.length === 1 ? "点击通知直达" : "点击通知查看所有免费游戏"}`;
+        
         games.forEach((game, index) => {
             content += `\n🎮 ${index + 1}. ${game.title}`;
             content += `\n⏰ 截止: ${game.endDate} (北京时间)`;
             // 不再显示单独的链接行，避免重复
         });
-        
-        // 添加通用提示
-        content += `\n\n🔗 领取地址：${games.length === 1 ? "点击通知直达" : "点击通知查看所有免费游戏"}`;
         
         // 智能设置点击行为
         let clickUrl = 'https://store.epicgames.com/free-games'; // 默认跳转总览页
