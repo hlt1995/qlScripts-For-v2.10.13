@@ -1,4 +1,4 @@
-//name: Epic免费入库提醒
+//name: Epic免费游戏领取提醒
 //cron: 30 7 * * * 5
 
 const axios = require('axios');
@@ -6,7 +6,7 @@ const axios = require('axios');
 // 从环境变量获取Bark Key
 const BARK_KEY = process.env.BARK_PUSH || process.env.BARK_KEY;
 if (!BARK_KEY) {
-    console.error('❌ 未找到BARK_PUSH环境变量，请先在青龙面板的配置文件中配置变量export BARK_PUSH=""');
+    console.error('❌ 未找到BARK_PUSH环境变量，请先在青龙面板的配置文件config.sh中配置变量export BARK_PUSH=""');
     process.exit(1);
 }
 const BARK_API = `https://api.day.app/${BARK_KEY}`;
@@ -139,7 +139,7 @@ async function sendBarkNotification(games) {
     
     try {
         // 构造消息内容
-        const title = `EPIC免费游戏 (${games.length}款)`;
+        const title = `Epic本周免费游戏 (${games.length}款)`;
         let content = '';
         
         games.forEach((game, index) => {
@@ -149,7 +149,7 @@ async function sendBarkNotification(games) {
         });
         
         // 添加通用提示
-        content += `\n\n🔗 领取地址：${games.length === 1 ? "" : ""}`;
+        content += `\n\n🔗 领取地址：${games.length === 1 ? "点击通知直达" : "点击通知查看所有免费游戏"}`;
         
         // 智能设置点击行为
         let clickUrl = 'https://store.epicgames.com/free-games'; // 默认跳转总览页
@@ -168,7 +168,7 @@ async function sendBarkNotification(games) {
             url: clickUrl, // 智能设置点击跳转
             automaticallyCopy: 1,
             copy: copyContent, // 智能设置复制内容
-            group: 'Epic周免领取提醒', // 修改分组名称
+            group: 'Epic免费游戏领取提醒', // 修改分组名称
             isArchive: 1 // 保存到历史记录
         };
         
