@@ -143,11 +143,11 @@ async function sendBarkNotification(games) {
         let content = '';
         
         // 添加通用提示
-        content += `\n🔗 领取地址：${games.length === 1 ? "点击通知直达" : "点击通知查看"}`;
+        content += `\n🔗 领取地址：${games.length === 1 ? "点击通知直达" : "点击通知直达"}`;
         
         games.forEach((game, index) => {
             content += `\n🎮 ${index + 1}. ${game.title}`;
-            content += `\n⏳ 截止: ${game.endDate} (北京时间)`;
+            content += `\n⏳ 截止: ${game.endDate} (北京时间)\n`;
             // 不再显示单独的链接行，避免重复
         });
         
