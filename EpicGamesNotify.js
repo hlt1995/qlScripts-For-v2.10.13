@@ -1,5 +1,5 @@
 //name: Epic免费游戏领取提醒
-//cron: 30 7 * * * 5
+//cron: 30 7 * * 5
 
 const axios = require('axios');
 
@@ -143,11 +143,11 @@ async function sendBarkNotification(games) {
         let content = '';
         
         // 添加通用提示
-        content += `\n🔗 领取地址：${games.length === 1 ? "点击通知直达" : "点击通知查看所有免费游戏"}`;
+        content += `\n🔗 领取地址：${games.length === 1 ? "点击通知直达" : "点击通知查看"}`;
         
         games.forEach((game, index) => {
             content += `\n🎮 ${index + 1}. ${game.title}`;
-            content += `\n⏰ 截止: ${game.endDate} (北京时间)`;
+            content += `\n⏳ 截止: ${game.endDate} (北京时间)`;
             // 不再显示单独的链接行，避免重复
         });
         
