@@ -111,7 +111,7 @@ main() {
     case "$IP_TYPE" in
         A)       update_ip A ;;
         AAAA)    update_ip AAAA ;;
-        A&AAAA)  update_ip A; update_ip AAAA ;;
+        "A&AAAA")  update_ip A; update_ip AAAA ;;
         *)       echo "❌ 记录类型无效，应为 A / AAAA / A&AAAA" ;;
     esac
 
