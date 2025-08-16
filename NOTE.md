@@ -47,3 +47,44 @@ fi
 第四步、打开自动增加新的本地定时任务,用推荐拉库指令再拉一次jdpro
 
 第五步、新建脚本`新农场幸运转盘_2`、`jd_CheckCK1.js`、`jd_bean_change1.js`
+
+---
+
+### 通过IPv6地址进行青龙面板外网访问
+
+在Alpine下执行`nano /etc/nginx/conf.d/front.conf`找到
+
+```
+server {
+  listen 5700;
+  root /ql/dist;
+  ssl_session_timeout 5m;
+```
+在`listen 5700;`下增加一行`listen [::]:5700;`
+
+修改后
+
+```
+server {
+  listen 5700;
+  listen [::]:5700;
+  root /ql/dist;
+  ssl_session_timeout 5m;
+```
+
+按Ctrl+O再按Enter保存文件，按Ctrl+X退出
+
+检查配置是否正确：
+```
+nginx -t
+```
+如果提示 `syntax is ok`，继续下一步
+
+重新加载 Nginx：
+```
+nginx -s reload
+```
+
+在浏览器里输入 [IPv6地址]:5700 或者 你的动态域名:5700 即可外网访问青龙面板
+
+---
