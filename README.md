@@ -8,6 +8,8 @@ ql repo https://github.com/hlt1995/qlScript.git "" "restoreQL|jd_|ql"
 
 ## 🚀 自动更新YDNS、DuckDNS动态域名服务的IP地址
 
+同时支持A/AAAA地址解析，任选其一即可
+
 YDNS：https://ydns.io
 
 DuckDNS：https://www.duckdns.org
