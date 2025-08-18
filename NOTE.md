@@ -87,6 +87,8 @@ nginx -s reload
 
 在浏览器里输入 [IPv6地址]:5700 或者 你的动态域名:5700 即可外网访问青龙面板
 
+# 这里注意，IPv6访问青龙面板的前提是访问设备也需要获取IPv6地址！
+
 由于每次重启青龙面板都要执行ql.sh，其中的`cp -fv $nginx_app_conf /etc/nginx/conf.d/front.conf`会把默认文件覆盖我们修改的`front.conf`
 
 所以需要注释掉这行，在Alpine下执行`nano ql.sh`
