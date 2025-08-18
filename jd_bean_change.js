@@ -1469,48 +1469,6 @@ function redPacket() {
                         $.jdGeneralRed = $.jdGeneralRed.toFixed(2);
                         $.expiredBalance = ($.jxRedExpire + $.jsRedExpire + $.jdRedExpire + $.jdhRedExpire + $.jdwxRedExpire + $.jdGeneralRedExpire).toFixed(2);
                         $.message += `【红包总额🧧】${$.balance}元(今日总过期${$.expiredBalance}) \n`;
-                        if ($.jxRed > 0) {
-                            if ($.jxRedExpire > 0)
-                                $.message += `【京喜红包】${$.jxRed}元(今日将过期${$.jxRedExpire.toFixed(2)}) \n`;
-                            else
-                                $.message += `【京喜红包】${$.jxRed}元 \n`;
-                        }
-
-                        if ($.jsRed > 0) {
-                            if ($.jsRedExpire > 0)
-                                $.message += `【特价版APP】${$.jsRed}元(今日将过期${$.jsRedExpire.toFixed(2)}) \n`;
-                            else
-                                $.message += `【特价版APP】${$.jsRed}元 \n`;
-                        }
-
-                        if ($.jdRed > 0) {
-                            if ($.jdRedExpire > 0)
-                                $.message += `【京东APP】${$.jdRed}元(今日将过期${$.jdRedExpire.toFixed(2)}) \n`;
-                            else
-                                $.message += `【京东APP】${$.jdRed}元 \n`;
-                        }
-
-                        if ($.jdhRed > 0) {
-                            if ($.jdhRedExpire > 0)
-                                $.message += `【健康红包】${$.jdhRed}元(今日将过期${$.jdhRedExpire.toFixed(2)}) \n`;
-                            else
-                                $.message += `【健康红包】${$.jdhRed}元 \n`;
-                        }
-
-                        if ($.jdwxRed > 0) {
-                            if ($.jdwxRedExpire > 0)
-                                $.message += `【微信小程序】${$.jdwxRed}元(今日将过期${$.jdwxRedExpire.toFixed(2)}) \n`;
-                            else
-                                $.message += `【微信小程序】${$.jdwxRed}元 \n`;
-                        }
-
-                        if ($.jdGeneralRed > 0) {
-                            if ($.jdGeneralRedExpire > 0)
-                                $.message += `【全平台通用】${$.jdGeneralRed}元(今日将过期${$.jdGeneralRedExpire.toFixed(2)}) \n`;
-                            else
-                                $.message += `【全平台通用】${$.jdGeneralRed}元 \n`;
-
-                        }
 
                     } else {
                         console.log(`京东服务器返回空数据`)
