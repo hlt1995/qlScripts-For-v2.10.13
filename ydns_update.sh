@@ -30,7 +30,7 @@ if [ -z "$YDNS_HOST" ] || [ -z "$YDNS_USER" ] || [ -z "$YDNS_PASS" ] || [ -z "$I
 fi
 
 # API
-IPV4_API="http://members.3322.org/dyndns/getip"   # 获取IPv4
+IPV4_API="http://members.3322.org/dyndns/getip"
 IPV6_API="https://api64.ipify.org"   # 获取IPv6
 
 # 上次IP记录文件路径（青龙v2.12.2以下）
@@ -72,33 +72,35 @@ update_ydns() {
 # 更新逻辑
 update_ip() {
     local type="$1"
-    local current_ip last_ip file
+    local current_ip last_ip file label
 
     if [ "$type" = "A" ]; then
         current_ip=$(get_ipv4)
         file="$IPV4_FILE"
+        label="IPv4"
     else
         current_ip=$(get_ipv6)
         file="$IPV6_FILE"
+        label="IPv6"
     fi
 
     last_ip=$(get_last_ip "$file")
 
     if [ -z "$current_ip" ]; then
-        echo "❌ 无法获取公网${type}地址" >&2 | tee -a "$LOG"
+        echo "❌ 无法获取公网${label}地址" >&2 | tee -a "$LOG"
         return
     fi
 
-    echo "${type} 当前: $current_ip" | tee -a "$LOG"
-    echo "${type} 上次: $last_ip" | tee -a "$LOG"
+    echo "${label} 当前: $current_ip" | tee -a "$LOG"
+    echo "${label} 上次: $last_ip" | tee -a "$LOG"
 
     if [ "$current_ip" = "$last_ip" ]; then
-        echo "ℹ️ ${type} 未变化，跳过更新" | tee -a "$LOG"
+        echo "ℹ️ ${label} 未变化，跳过更新" | tee -a "$LOG"
     else
-        echo "🔄 ${type} 已变化，开始更新..." | tee -a "$LOG"
+        echo "🔄 ${label} 已变化，开始更新..." | tee -a "$LOG"
         if update_ydns "$current_ip"; then
             save_ip "$file" "$current_ip"
-            echo "📌 已保存${type}: $current_ip" | tee -a "$LOG"
+            echo "📌 已保存${label}: $current_ip" | tee -a "$LOG"
         fi
     fi
 }
