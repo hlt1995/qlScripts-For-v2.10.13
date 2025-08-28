@@ -36,9 +36,6 @@ IPV6_API="https://api64.ipify.org"   # 获取IPv6
 # 上次IP记录文件路径（青龙v2.12.2以下）
 IPV4_FILE="/ql/scripts/hlt1995_qlScript/ydns_last_ipv4.txt"
 IPV6_FILE="/ql/scripts/hlt1995_qlScript/ydns_last_ipv6.txt"
-# 青龙v2.12.2及以上请改路径
-# IPV4_FILE="/ql/data/scripts/hlt1995_qlScript/ydns_last_ipv4.txt"
-# IPV6_FILE="/ql/data/scripts/hlt1995_qlScript/ydns_last_ipv6.txt"
 
 DEBUG="${DEBUG:-false}"
 LOG="/dev/null"
